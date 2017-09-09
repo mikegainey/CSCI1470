@@ -42,7 +42,19 @@ t = number of years
 
 Write a Python program that assigns the principal amount of $10000 to variable P, assign to n the value 12, 
 and assign to r the interest rate of 8%. Then have the program prompt the user for the number of years 
-that the money will be compounded for. Calculate and print the final amount after t years.'''
+that the money will be compounded for. Calculate and print the final amount after t years.
+
+Homework #1
+
+Due: Tuesday, September 11th, in class
+
+Write a Python program that solves problem #5 from chapter 2 of your online text. Run the program 3 times, 
+using the values 10, 25 and 50 as input values for t. Write descriptive text for the output, such as: 
+"The amount due when years = 10 is ...". (10 points)
+
+Bring a hardcopy of your program code and output for the program to class on Tuesday.
+
+'''
 
 P = 10000
 n = 12
@@ -52,3 +64,7 @@ t = float(t_input)
 
 A = P * (1 + (r/n))**(n * t)
 print("The amount due when years =", t, "is", A)
+
+# print("With an initial amount of {}, an interest rate of {}".format(P, r))
+# print("and compounding {} times a year, after {} years".format(n, t))
+# print("you will have a final amount of {} dollars.".format(A))

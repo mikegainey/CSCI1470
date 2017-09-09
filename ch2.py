@@ -14,11 +14,11 @@ s8 = 'a'
 s9 = 'dull'
 s10 = 'boy.'
 
-print(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10)
+# print(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10)
 
 # 2. Add parenthesis to the expression 6 * 1 - 2 to change its value from 4 to -6.
 
-print(6 * (1 - 2))
+# print(6 * (1 - 2))
 
 # 3. Place a comment before a line of code that previously worked, and record what happens when you rerun the program.
 
@@ -28,7 +28,7 @@ print(6 * (1 - 2))
 
 bruce = 6
 
-print(bruce + 4)
+# print(bruce + 4)
 
 # 5.
 '''The formula for computing the final amount if one is earning compound interest is given on Wikipedia as
@@ -44,5 +44,11 @@ Write a Python program that assigns the principal amount of $10000 to variable P
 and assign to r the interest rate of 8%. Then have the program prompt the user for the number of years 
 that the money will be compounded for. Calculate and print the final amount after t years.'''
 
+P = 10000
+n = 12
+r = 0.08
+t_input = input("How many years? ")
+t = float(t_input)
 
-
+A = P * (1 + (r/n))**(n * t)
+print("The amount due when years =", t, "is", A)

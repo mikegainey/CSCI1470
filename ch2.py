@@ -1,4 +1,4 @@
-# HTTLACS Ch. 2, Exercises 1-5
+# HTTLaCS Ch. 2, Exercises 1-5
 
 # 1. Take the sentence: All work and no play makes Jack a dull boy. Store each word in a separate variable,
 #    then print out the sentence on one line using print.
@@ -53,18 +53,22 @@ using the values 10, 25 and 50 as input values for t. Write descriptive text for
 "The amount due when years = 10 is ...". (10 points)
 
 Bring a hardcopy of your program code and output for the program to class on Tuesday.
-
 '''
 
 P = 10000
 n = 12
 r = 0.08
 t_input = input("How many years? ")
-t = float(t_input)
+t = int(t_input)
 
-A = P * (1 + (r/n))**(n * t)
+A = P * (1 + (r / n))**(n * t)
 print("The amount due when years =", t, "is", A)
 
-# print("With an initial amount of {}, an interest rate of {}".format(P, r))
+# print("With an initial amount of ${:,.2f}, an interest rate of {}%".format(P, r * 100))
 # print("and compounding {} times a year, after {} years".format(n, t))
-# print("you will have a final amount of {} dollars.".format(A))
+# print("you will have a final amount of ${:,.2f} dollars.".format(A))
+
+# From http://www.moneychimp.com/calculator/compound_interest_calculator.htm
+# 10 years: $22,196.40
+# 25 years: $73,401.76
+# 50 years: $538,781.83

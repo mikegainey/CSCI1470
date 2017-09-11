@@ -8,8 +8,8 @@
 #
 # Algorithm:
 #   Variable assignments
-#   Prompt user for number of years to comute compound interest
-#   Compute compount interest
+#   Prompt user for number of years to compute compound interest
+#   Compute final amount with compount interest
 #   Print result
 #**********************************************************
 
@@ -20,5 +20,5 @@ r = 0.08   # annual nominal interest rate (as a decimal)
 t_input = input("How many years? ")
 t = int(t_input)  # number of years
 
-A = P * (1 + (r / n))**(n * t)  # compute compound interest
-print("The amount due when years =", t, "is", A)
+A = P * (1 + (r / n))**(n * t)  # final amount /w compound interest
+print("The final amount when years =", t, "is", A)

@@ -1,4 +1,4 @@
-#**********************  orAndTest.py  *********************
+############################################################
 #
 # Name: Michael Gainey
 #
@@ -7,9 +7,10 @@
 # Assignment: Homework #
 #
 # Algorithm:
-#   Declarations
+#   Variable assignments
 #   Prompt user for dayOfWeek
 #   Get dayOfWeek
 #   if dayOfWeek is Tuesday
-#      ...
-#**********************************************************
+#    ...
+############################################################
+

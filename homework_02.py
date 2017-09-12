@@ -7,18 +7,13 @@
 # Assignment: Homework #2
 #
 # Algorithm:
-#   Variable assignments
+#   create the window
+#   create the turtle
 #   Draw M
 #   Draw I
 #   Draw K
 #   Draw E
 ############################################################
-# Due: to Blackboard by 11:59 pm Tuesday, September 19th
-
-# Use turtle graphics to draw at least 4 different alphabetic characters of your choice across your output screen. Each
-# character may be drawn using straight lines. Make sure that the characters are lined up in a row, not overlapping, and
-# large enough to be read easily. Add a preface to your code that contains the following fields: Name, Course, Assignment,
-# and Algorithm. Surround the preface with the '#' as shown in class. (10 points)
 
 import turtle
 import math
@@ -32,7 +27,8 @@ mike.color('green')
 mike.pensize(5)
 mike.speed(10)
 
-mike.penup()           # move the turtle to the starting point
+# move the turtle to the starting point
+mike.penup()           
 mike.back(120)
 mike.pendown()
 
@@ -84,7 +80,7 @@ mike.penup()
 mike.forward(20)
 mike.pendown()
 
-# draw the "E" (because the lowercase version is too hard)
+# draw the "E" (because the lowercase "e" is too hard)
 mike.left(90)
 mike.forward(70) # the spine of the "E"
 mike.right(90)

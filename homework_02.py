@@ -15,6 +15,10 @@
 #   Draw E
 ############################################################
 
+# turtle docs: https://docs.python.org/3.6/library/turtle.html#
+# Tk colors: http://www.tcl.tk/man/tcl8.4/TkCmd/colors.htm
+# Google color picker: just Google search for "color picker"
+
 import turtle
 import math
 

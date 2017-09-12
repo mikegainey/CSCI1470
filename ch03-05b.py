@@ -12,6 +12,7 @@ wn.title("n-sided n-gon")
 geowiz = turtle.Turtle()
 
 geowiz.pensize(5)
+geowiz.speed(10)
 
 offset = 90
 for j in range(int(360 / offset)):

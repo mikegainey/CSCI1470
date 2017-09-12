@@ -1,6 +1,8 @@
-# Every turtle can have its own shape. The ones available “out of the box” are
-#   arrow, blank, circle, classic, square, triangle, turtle.
+# Every turtle can have its own shape. The ones available “out of the box” are ...
+# arrow, blank, circle, classic, square, triangle, turtle.
 
+# A turtle can “stamp” its footprint onto the canvas, and this will remain after the turtle has moved somewhere
+# else. Stamping works, even when the pen is up.
 
 import turtle
 wn = turtle.Screen()
@@ -17,6 +19,6 @@ for i in range(30):
    tess.forward(size)       # Move tess along
    tess.right(24)           #  ...  and turn her
 
-tess.right(360*10)
+tess.right(360*4)
 
 wn.mainloop()

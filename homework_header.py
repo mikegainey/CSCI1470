@@ -1,10 +1,10 @@
 #**********************  orAndTest.py  *********************
 #
-# Name: Patrick Rothfuss
+# Name: Michael Gainey
 #
 # Course: CSCI 1470
 #
-# Assignment: Homework #6
+# Assignment: Homework #
 #
 # Algorithm:
 #   Declarations

@@ -9,10 +9,10 @@
 # Algorithm:
 #   create the window
 #   create the turtle
-#   Draw M
-#   Draw I
-#   Draw K
-#   Draw E
+#   Draw "M"
+#   Draw "i"
+#   Draw "k"
+#   Draw "E"
 ############################################################
 
 # turtle docs: https://docs.python.org/3.6/library/turtle.html#

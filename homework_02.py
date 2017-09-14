@@ -29,7 +29,7 @@ wn.bgcolor('#d7edd5')
 mike = turtle.Turtle() # make the turtle
 mike.color('green')
 mike.pensize(5)
-mike.speed(10)
+# mike.speed(10)
 
 # move the turtle to the starting point
 mike.penup()           

@@ -7,8 +7,8 @@
 # Assignment: Homework #2
 #
 # Algorithm:
-#   create the window
-#   create the turtle
+#   Create the window
+#   Create the turtle
 #   Draw "M"
 #   Draw "i"
 #   Draw "k"

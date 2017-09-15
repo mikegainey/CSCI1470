@@ -57,3 +57,4 @@ for child in range(3): # loops for each child: 0, 1, and 2
     print()
     print("{} {}, age {}, stayed {} hours at ${} per hour. You owe ${} today.".format(fname, lname, age, hours, fee, bill))
     print("=" * 80) # horizontal line
+    print()

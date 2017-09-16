@@ -9,8 +9,8 @@ Your program will accept
 The fee is 
 - $15 per hour for children under 2 years old, 
 - $10 per hour for children 2 to 4 years, 
-- $8 per hour for children 5 to 8 years, and 
-- $6 per hour for children from 8 to 10. 
+- $8 per hour for children 5 to 8 years, and    # What is the fee for an 8-year-old?
+- $6 per hour for children from 8 to 10.        #   $8/hr or $6/hr ?
 - Children over 10 are not accepted. 
 
 For example: a child that is 3 years old and stays for 3 hours will be charged $30. 

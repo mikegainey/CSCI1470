@@ -7,7 +7,7 @@
 # Assignment: Homework #3
 #
 # Algorithm:
-#   Loop to execute this program 3 times:
+#   Begin loop to execute this program 3 times:
 #     Assign variables with user input
 #     Using age, determine the hourly fee
 #     Compute the bill (hours * hourly fee)
@@ -24,25 +24,26 @@ for child in range(3):
     print("=" * 80)
     
     # Assign variables with user input
+    # Alphabetic characters in age and hours will cause a runtime error
     while True:
         fname = input("  What is your child's first name? ")
         lname = input("  What is the family name? ")
 
         age = input("  What is your child's age? ")
-        age = float(age) # this converts any numeric string (like "3.5") to a float
-        age = int(age)   # this rounds any float down (so an age of 3.5 is considered a 3-year-old)
-        if (age > 10) or (age < 0):
+        age = float(age) # convert any numeric string (like "3.5") to a float
+        age = int(age)   # round any float down (so an age of 10.5 is considered a 10-year-old)
+        if (age < 0) or (age > 10):
             print("    (We only accept children through age 10.)")
-            print()
+            print() # loop back and ask for another child (of acceptable age)
         else:
-            break # age is within range, so continue the program (otherwise, ask again)
+            break   # age is within range, so continue the program
 
     hours = input("  How many hours will your child stay today? ")
     hours = float(hours) # hours doesn't have to be a whole number
 
-    # Using age, determine the hourly fee
+    # Using age (an integer), determine the hourly fee
     #   Note: "... expressions like a < b < c have the interpretation that is conventional in mathematics"
-    #   see https://docs.python.org/3/reference/expressions.html#comparisons
+    #   See https://docs.python.org/3/reference/expressions.html#comparisons
     if  age < 2:
         fee = 15
     elif 2 <= age <= 4: # age is an int (so age = 4.5 doesn't have to be considered)
@@ -58,9 +59,9 @@ for child in range(3):
     bill = fee * hours
 
     # Display the final bill with all relevant information
-    # for string formatting info see: https://docs.python.org/3/library/string.html#format-string-syntax
+    # For string formatting info see: https://docs.python.org/3/library/string.html#format-string-syntax
     print()
-    print("{} {}, age {}, stayed {} hours today at ${} per hour. You owe ${:.2f}."\
+    print("{} {}, age {}, stayed {} hours today at ${} per hour, so you owe ${:.2f}."\
           .format(fname, lname, age, hours, fee, bill))
     print("=" * 80)
     print()

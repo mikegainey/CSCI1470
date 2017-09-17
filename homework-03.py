@@ -24,7 +24,7 @@ for child in range(3):
     print("=" * 80)
     
     # Assign variables with user input
-    # Alphabetic characters in age and hours will cause a runtime error
+    # Non-numeric characters in age and hours will cause a runtime error
     while True:
         fname = input("  What is your child's first name? ")
         lname = input("  What is the family name? ")
@@ -41,12 +41,12 @@ for child in range(3):
     hours = input("  How many hours will your child stay today? ")
     hours = float(hours) # hours doesn't have to be a whole number
 
-    # Using age (an integer), determine the hourly fee
+    # Using age (an integer from 0 to 10), determine the hourly fee
     #   Note: "... expressions like a < b < c have the interpretation that is conventional in mathematics"
     #   See https://docs.python.org/3/reference/expressions.html#comparisons
-    if  age < 2:
+    if  age < 2:        # for ages 0 and 1, the fee is $15/hr
         fee = 15
-    elif 2 <= age <= 4: # age is an int (so age = 4.5 doesn't have to be considered)
+    elif 2 <= age <= 4: # age has been cast to an int (so age = 4.5 doesn't have to be considered)
         fee = 10
     elif 5 <= age <= 7:
         fee = 8
@@ -61,7 +61,7 @@ for child in range(3):
     # Display the final bill with all relevant information
     # For string formatting info see: https://docs.python.org/3/library/string.html#format-string-syntax
     print()
-    print("{} {}, age {}, stayed {} hours today at ${} per hour, so you owe ${:.2f}."\
+    print("{} {}, age {}, stayed {} hours today at ${} per hour. You owe ${:.2f}."\
           .format(fname, lname, age, hours, fee, bill))
     print("=" * 80)
     print()

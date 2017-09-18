@@ -56,7 +56,7 @@ for child in range(3):
         fee = 6
     else:
         print("\nError - All ages should have been handled by now. (age = {}) \n".format(age))
-        quit()
+        quit() # this should never happen
 
     # Compute the bill (hours * hourly fee)
     bill = fee * hours

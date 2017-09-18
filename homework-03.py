@@ -44,15 +44,13 @@ for child in range(3):
     hours = float(hours) # hours doesn't have to be a whole number
 
     # Using age (an integer from 0 to 10), determine the hourly fee
-    #   Note: "... expressions like a < b < c have the interpretation that is conventional in mathematics"
-    #   See https://docs.python.org/3/reference/expressions.html#comparisons
-    if  age < 2:        # for ages 0 and 1, the fee is $15/hr
+    if  age in [0, 1]:     # for ages 0 and 1, the fee is $15/hr
         fee = 15
-    elif 2 <= age <= 4: # age has been cast to an int (so age = 4.5 doesn't have to be considered)
+    elif age in [2, 3, 4]: # age has been cast to an int (so age = 4.5 doesn't have to be considered)
         fee = 10
-    elif 5 <= age <= 7:
+    elif age in [5, 6, 7]:
         fee = 8
-    elif 8 <= age <= 10:
+    elif age in [8, 9, 10]:
         fee = 6
     else:
         print("\nError - All ages should have been handled by now. (age = {}) \n".format(age))

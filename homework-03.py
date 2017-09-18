@@ -55,7 +55,8 @@ for child in range(3):
     elif 8 <= age <= 10:
         fee = 6
     else:
-        print("Error - All ages should have been handled by now.")
+        print("\nError - All ages should have been handled by now. (age = {}) \n".format(age))
+        quit()
 
     # Compute the bill (hours * hourly fee)
     bill = fee * hours

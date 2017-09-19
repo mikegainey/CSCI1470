@@ -61,6 +61,7 @@ for child in range(3):
 
     # Display the final bill with all relevant information
     # For string formatting info: https://docs.python.org/3/whatsnew/3.6.html#pep-498-formatted-string-literals
+    #   also, https://youtu.be/hk85RUtQsBI?t=6m48s (What's new in Python 3.6 (Brett Cannon))
     print()
     print(f"{fname} {lname}, age {age}, stayed {hours} hours today at ${fee} per hour. You owe ${bill:.2f}.")
     print("=" * 80)

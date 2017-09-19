@@ -1,0 +1,20 @@
+Write a Python program for the UH Clear Lake Child Care that calculates and displays a bill for your child's stay.
+
+Your program will accept 
+- the child's name, 
+- the family name, 
+- the child's age and 
+- the number of hours the child stayed. 
+
+The fee is 
+- $15 per hour for children under 2 years old, 
+- $10 per hour for children 2 to 4 years, 
+- $8 per hour for children 5 to 7 years, and 
+- $6 per hour for children from 8 to 10. 
+- Children over 10 are not accepted. 
+
+For example: a child that is 3 years old and stays for 3 hours will be charged $30. 
+
+Print a final bill for each child that shows their name, age, hours and total. 
+
+Using a for loop, run your program 3 times and enter information for three children, each in a different age category.

@@ -1,0 +1,40 @@
+michael@michael-desktop:~/prog/git/CSCI1470$ python3 GaineyM_CSCI1470_HW3.py 
+
+================================================================================
+                      Welcome to UH Clear Lake Child Care!                      
+================================================================================
+  What is your child's first name? Mike
+  What is the family name? Gainey
+  What is your child's age? 1
+  How many hours will your child stay today? 4
+
+Mike Gainey, age 1, stayed 4.0 hours today at $15 per hour. You owe $60.00.
+================================================================================
+
+
+================================================================================
+                      Welcome to UH Clear Lake Child Care!                      
+================================================================================
+  What is your child's first name? Ike
+  What is the family name? Gainey
+  What is your child's age? 10
+  How many hours will your child stay today? 6
+
+Ike Gainey, age 10, stayed 6.0 hours today at $6 per hour. You owe $36.00.
+================================================================================
+
+
+================================================================================
+                      Welcome to UH Clear Lake Child Care!                      
+================================================================================
+  What is your child's first name? Spike
+  What is the family name? Gainey
+  What is your child's age? 4
+  How many hours will your child stay today? 3.5
+
+Spike Gainey, age 4, stayed 3.5 hours today at $10 per hour. You owe $35.00.
+================================================================================
+
+michael@michael-desktop:~/prog/git/CSCI1470$
+
+

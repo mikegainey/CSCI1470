@@ -7,8 +7,8 @@
 # Assignment: Homework #3
 #
 # Algorithm:
-#   Begin loop to execute this program 3 times:
-#     Assign variables with user input
+#   Repeat 3 times:
+#     Assign variables with user input (name, age, & hours)
 #     Using age, determine the hourly fee
 #     Compute the bill (hours * hourly fee)
 #     Print the final bill with all relevant information

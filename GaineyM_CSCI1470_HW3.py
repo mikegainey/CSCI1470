@@ -15,8 +15,6 @@
 #   
 ############################################################
 
-# Note: This program requires Python 3.6 to use f-strings (formatted string literals)
-
 # Loop to execute this program 3 times:
 for child in range(3):
 
@@ -60,9 +58,7 @@ for child in range(3):
     bill = fee * hours
 
     # Display the final bill with all relevant information
-    # For string formatting info: https://docs.python.org/3/whatsnew/3.6.html#pep-498-formatted-string-literals
-    #   also, https://youtu.be/hk85RUtQsBI?t=6m48s (What's new in Python 3.6 (Brett Cannon))
     print()
-    print(f"{fname} {lname}, age {age}, stayed {hours} hours today at ${fee} per hour. You owe ${bill:.2f}.")
+    print("{} {}, age {}, stayed {} hours today at ${} per hour. You owe ${:.2f}.".format(fname, lname, age, hours, fee, bill))
     print("=" * 80)
     print()

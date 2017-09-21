@@ -21,7 +21,7 @@ costOver3 = minOver3 * feeOver3
 
 totalCost = baseCost + costOver3
 
-print("Your call cost ${:.2f}.  $2.50 for the connection fee and first three minutes".format(totalCost))
-print("  and ${:.2f} for {} additional minutes at $0.40 per minute.".format(costOver3, minOver3))
+print(f"Your amount due is ${totalCost:.2f}:")
+print(f" That's ${baseCost:.2f} for the connection fee and first three minutes,")
+print(f" and ${costOver3:.2f} for {minOver3} additional minutes at ${feeOver3:.2f} per minute.")
 print()
-

@@ -24,10 +24,11 @@ def reducefrac(n, d):
         
 # reducefrac(random.randint(1, 1000), random.randint(1, 1000)) # test the function with random input
 
-# Note: The algorithm should be obvious from the embedded print statements.  It's inefficiency should also be obvious, but
-#  it's good enough for "normal" numbers (under xx,xxx/xx,xxx or so) as long as the algorithm itself isn't placed inside
-#  another loop with too many iterations.
+# Note: The algorithm should be obvious from the intermediate output showing the computer thinking.  Its inefficiency
+# should also be obvious, but it's good enough for "normal" numbers (under xx,xxx/xx,xxx or so) as long as the function
+# itself isn't placed inside another loop with too many iterations.
 
+ 
 # ===== Sample output =====
 
 # Let's reduce the fraction 266/588 ...

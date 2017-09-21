@@ -1,0 +1,27 @@
+
+Due: Thursday, September 28th 11:59pm
+
+Design and write a Python program that gives exact change for an item purchased with $5 or less.
+- Ask the user to enter an item cost and an amount tendered.
+- Check to make sure that the amount tendered is sufficient to cover the cost of the item;
+- if not, report an appropriate error message.
+- Your program will report the amount of change given: number of dollar bills, quarters, dimes, nickels and pennies.
+- Allow the user to enter a new problem until they wish to stop.
+
+Include a preface with appropriate pseudocode.
+
+Demonstrate your program to one of the BSC mentors in Delta 159. (5 points)
+
+
+Grading Rubric for Homework #4 – Making Change
+
+2 points: pseudocode is beautiful and is descriptive of code
+1 point: program prompts for item purchased and amount tendered
+4 points: change is correctly calculated and reported with correct numbers of dollar bills, quarters, dimes,nickels,
+  and pennies
+1 points: error is reported
+2 points: program loops until user wants to stop
+5 points: demonstrate your program to a BSC mentor in Delta 159 _____
+
+15 points total
+

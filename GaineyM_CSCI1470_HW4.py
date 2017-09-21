@@ -36,28 +36,33 @@ while True:
     # compute the number of ones, quarters, dimes, nickles, and pennies
     ones, quarters, dimes, nickles, pennies = 0, 0, 0, 0, 0
 
-    ones = int(tempchange // 1)
+    ones = int(tempchange / 1)
     tempchange = round(tempchange % 1, 2)
 
-    quarters = int(tempchange // .25)
+    quarters = int(tempchange / .25)
     tempchange = round(tempchange % .25, 2)
 
-    dimes = int(tempchange // .1)
+    dimes = int(tempchange / .1)
     tempchange = round(tempchange % .10, 2)
 
-    nickles = int(tempchange // .05)
+    nickles = int(tempchange / .05)
     tempchange = round(tempchange % .05, 2)
 
-    pennies = int(tempchange / .01) # regular division because .03 // .01 = 0.009999999999999998
+    pennies = int(tempchange / .01)
     tempchange = round(tempchange % .01, 2)
 
     # Report the amount of change given: number of dollar bills, quarters, dimes, nickels and pennies.
     print("Your change is ${:.2f}. That's {} ones, {} quarters, {} dimes, {} nickles, and {} pennies."
           .format(change, ones, quarters, dimes, nickles, pennies))
 
-    another = input("Do you want to buy another item? (yes or no) ")
+    # Buy another item?
+    another = input("Do you want to buy another item? (y/N) ")
+    if another == '': # just pressing <Enter> = no
+        another = 'n'
     another = another[0].lower() # keep just the first character and convert to lowercase
-    if another == 'n':
+    if another == 'y':
+        continue # go back to the top of the while-loop
+    else:
+        print()
         break # break out of the loop (and end the program), else continue the while-loop
-
 

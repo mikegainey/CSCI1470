@@ -1,17 +1,19 @@
 # add two fractions
 
+from reducefrac import reducefrac # a little extra at the end
+
 print()
 print("Let's add two fractions!")
 
-n1 = int(input("Enter the numerator of the first number:    "))
-d1 = int(input("Enter the denominator of the first number:  "))
+n1 = int(input("Enter the numerator of the first number: "))
+d1 = int(input("Enter the denominator of the first number: "))
 
-n2 = int(input("Enter the numerator of the second number:   "))
+n2 = int(input("Enter the numerator of the second number: "))
 d2 = int(input("Enter the denominator of the second number: "))
 
 # Find a common denominator by multiplying the denominators.
 #   It may not be the lowest common denominator, so the result,
-#   while correct, may not bein simplest form.
+#   while correct, may not be in simplest form.
 cd = d1 * d2 # for 3/4 + 4/5, the cd = 4 * 5 = 20
 
 # adjust the numerators of the two numbers to reflect the new, common denominator
@@ -26,3 +28,8 @@ rn = int(rn) # get rid of the .0 to make the output look nice
 
 print("{}/{} + {}/{} = {}/{}".format(n1, d1, n2, d2, rn, rd))
 print()
+
+reducefrac(rn, rd) # reduce the fraction
+
+
+

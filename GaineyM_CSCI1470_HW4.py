@@ -7,10 +7,8 @@
 # Assignment: Homework #4
 #
 # Pseudocode:
-#   1
-#   2
-#   3
-#   4
+#   blah, blah, blah, ...
+#
 #   
 ############################################################
 
@@ -24,18 +22,19 @@ while True:
     tendered = float(input("  Enter the amount tendered: "))
 
     # Check to make sure that the amount tendered is sufficient to cover the cost of the item;
-    # if not, report an appropriate error message.
+    # if not, print an error message and start over
     if tendered < cost:
         print("Error: You need to pay an amount sufficient to cover the cost.")
         continue # go back to the top of the while-loop
 
-    # compute the amount of change
-    change = tendered - cost
-    tempchange = change
+    # compute the amount of change due
+    change = tendered - cost # change won't change
+    tempchange = change      # tempchange will change (mutate)
 
-    # compute the number of ones, quarters, dimes, nickles, and pennies
+    # initialize some variables
     ones, quarters, dimes, nickles, pennies = 0, 0, 0, 0, 0
 
+    # compute the number of ones, quarters, dimes, nickles, and pennies
     ones = int(tempchange / 1)
     tempchange = round(tempchange % 1, 2)
 
@@ -49,14 +48,13 @@ while True:
     tempchange = round(tempchange % .05, 2)
 
     pennies = int(tempchange / .01)
-    tempchange = round(tempchange % .01, 2)
-
+    
     # Report the amount of change given: number of dollar bills, quarters, dimes, nickels and pennies.
     print("Your change is ${:.2f}. That's {} ones, {} quarters, {} dimes, {} nickles, and {} pennies."
           .format(change, ones, quarters, dimes, nickles, pennies))
 
     # Buy another item?
-    another = input("Do you want to buy another item? (y/N) ")
+    another = input("Do you want to buy another item? (y/N) ") # 'no' is the defalt choice
     if another == '': # just pressing <Enter> = no
         another = 'n'
     another = another[0].lower() # keep just the first character and convert to lowercase
@@ -64,5 +62,4 @@ while True:
         continue # go back to the top of the while-loop
     else:
         print()
-        break # break out of the loop (and end the program), else continue the while-loop
-
+        break # break out of the loop and end the program

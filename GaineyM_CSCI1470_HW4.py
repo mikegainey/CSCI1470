@@ -5,16 +5,48 @@
 # Course: CSCI 1470
 #
 # Assignment: Homework #4
+# Design and write a Python program that gives exact change for an item purchased with $5 or less.
 #
 # Pseudocode:
-#   blah, blah, blah, ...
 #
-#   
+# Start a while loop
+#
+#   Prompt the user to enter the cost of an item
+#   Prompt the user to enter the amount tendered
+#   If the amount tendered is not sufficient, go to the top of the loop
+#  
+#   Compute the change (tendered - cost)
+#   Set tempchange to also equal change
+#  
+#   Initialize variables for monetary denominations (ones, quarters, dimes, nickles, and pennies) to zero
+#  
+#   Set ones to the number of times 1 will divide evenly into change
+#   Set tempchange to whatever amount is left
+#  
+#   Set quarters to the number of times .25 will divide evenly into change
+#   Set tempchange to whatever amount is left
+#
+#   Set dimes to the number of times .10 will divide evenly into change
+#   Set tempchange to whatever amount is left
+#
+#   Set nickles to the number of times .05 will divide evenly into change
+#   Set tempchange to whatever amount is left
+#
+#   Set pennies to the number of times .01 will divide evenly into change
+#  
+#   Print the amount of change including the number of one dollar bills, quarters, dimes, nickles, and pennies
+#  
+#   Prompt user to buy another item (default is no)
+#   Set another to 'n' if the user just presses <Enter>
+#   Set another to equal only its first character and convert to lowercase
+#  
+#   If another is 'y' go to the top of the loop, otherwise the program ends
+#
 ############################################################
 
-# Design and write a Python program that gives exact change for an item purchased with $5 or less.
 
-while True:
+while True: # this is how a do-while loop is done in Python; the break is at the bottom of the program
+            # see https://www.python.org/dev/peps/pep-0315/
 
     # Ask the user to enter an item cost and an amount tendered.
     print()

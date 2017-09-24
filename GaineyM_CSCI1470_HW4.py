@@ -1,4 +1,4 @@
-############################################################
+################################################################################
 #
 # Name: Michael Gainey
 #
@@ -9,41 +9,42 @@
 #
 # Pseudocode:
 #
-#   Set another to 'y' so the loop will execute
-#   Loop while another equals 'y'
+#   Set another to 'y' so the loop will execute.
+#   Loop while another equals 'y'.
 #
-#     Prompt the user to enter the cost of an item
-#     Prompt the user to enter the amount tendered
-#     If the amount tendered is not sufficient to cover the cost, go to the top of the loop
+#     Prompt the user to enter the cost of an item.
+#     Prompt the user to enter the amount tendered.
+#     If the amount tendered is not sufficient to cover the cost, print an error message
+#     and continue to the top of the loop.
 #
-#     Compute the change (tendered - cost)
-#     Set tempchange to also equal change
+#     Compute the change (tendered - cost).
+#     Set tempchange to also equal change. tempchange will hold the running remainder.
 #
-#     Initialize variables for monetary denominations (ones, quarters, dimes, nickles, and pennies) to zero
+#     Initialize variables for monetary denominations (ones, quarters, dimes, nickles, and pennies) to zero.
 #
-#     Set ones to the number of times 1 will divide evenly into change
-#     Set tempchange to whatever amount is left (the remainder)
+#     Set ones to the number of times 1 will divide evenly into tempchange.
+#     Set tempchange to whatever amount is left (the remainder).
 #
-#     Set quarters to the number of times .25 will divide evenly into change
-#     Set tempchange to whatever amount is left
+#     Set quarters to the number of times .25 will divide evenly into tempchange.
+#     Set tempchange to whatever amount is left.
 #
-#     Set dimes to the number of times .10 will divide evenly into change
-#     Set tempchange to whatever amount is left
+#     Set dimes to the number of times .10 will divide evenly into tempchange.
+#     Set tempchange to whatever amount is left.
 #
-#     Set nickles to the number of times .05 will divide evenly into change
-#     Set tempchange to whatever amount is left
+#     Set nickles to the number of times .05 will divide evenly into tempchange.
+#     Set tempchange to whatever amount is left.
 #
-#     Set pennies to the number of times .01 will divide evenly into change
+#     Set pennies to the number of times .01 will divide evenly into tempchange.
 #
-#     Print the amount of change including the number of one dollar bills, quarters, dimes, nickles, and pennies
+#     Print the amount of change including the number of one dollar bills, quarters, dimes, nickles, and pennies.
 #
-#     Prompt user to buy another item (default is no)
-#     Set another to 'n' if the user just presses <Enter>
-#     Set another to equal only its first character and convert it to lowercase
+#     Prompt the user to buy another item (default is no).
+#     Set another to 'n' if the user just presses <Enter>.
+#     Set another to equal only its first character and convert it to lowercase.
 #
-#     If another is 'y' the program will loop, otherwise the program ends
+#     (If another is 'y' the program will loop, otherwise the program ends.)
 #
-############################################################
+################################################################################
 
 another = 'y' # At the end, the user will be asked if they want to enter "another" item
 
@@ -62,7 +63,7 @@ while another == 'y':
 
     # compute the amount of change due
     change = tendered - cost # change won't change
-    tempchange = change      # tempchange will mutate
+    tempchange = change      # tempchange will hold the running remainder
 
     # initialize some variables
     ones, quarters, dimes, nickles, pennies = 0, 0, 0, 0, 0
@@ -91,6 +92,6 @@ while another == 'y':
     if another == '': # just pressing <Enter> = no
         another = 'n'
     another = another[0].lower() # keep just the first character and convert to lowercase
-    # if another == 'y' the program will run again, otherwise it will end
+    # if another == 'y' the program will run again (see the while statement), otherwise it will end
 
-print() # put a space before the next prompt
+print() # after the program ends, put a space before the next prompt

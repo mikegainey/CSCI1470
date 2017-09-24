@@ -12,6 +12,10 @@ Include a preface with appropriate pseudocode.
 
 Demonstrate your program to one of the BSC mentors in Delta 159. (5 points)
 
+Paul Taplett
+- Mon: 10am - 2pm
+- Wed: 10am - 11am, 12pm - 2pm
+
 
 Grading Rubric for Homework #4 – Making Change
 

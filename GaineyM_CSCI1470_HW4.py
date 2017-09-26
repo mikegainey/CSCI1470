@@ -7,6 +7,8 @@
 # Assignment: Homework #4
 # Design and write a Python program that gives exact change for an item purchased with $5 or less.
 #
+# This program was demonstrated to BSC Mentor Peter Banfield on Sep 25th at about 12:30pm.
+#
 # Pseudocode:
 #
 #   Set another to 'y' so the loop will execute.
@@ -14,7 +16,7 @@
 #
 #     Prompt the user to enter the cost of an item.
 #     Prompt the user to enter the amount tendered.
-#     If the amount tendered is not sufficient to cover the cost, print an error message
+#     If the amount tendered is not sufficient to cover the cost, print an error message.
 #     and continue to the top of the loop.
 #
 #     Compute the change (tendered - cost).
@@ -94,4 +96,4 @@ while another == 'y':
     another = another[0].lower() # keep just the first character and convert to lowercase
     # if another == 'y' the program will run again (see the while statement), otherwise it will end
 
-print() # after the program ends, put a space before the next prompt
+print() # after the program ends, put a blank line before the next shell prompt

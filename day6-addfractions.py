@@ -17,8 +17,8 @@ d2 = int(input("Enter the denominator of the second number: "))
 cd = d1 * d2 # for 3/4 + 4/5, the cd = 4 * 5 = 20
 
 # adjust the numerators of the two numbers to reflect the new, common denominator
-n1cd = (cd / d1) * n1 # (20 / 4) * 3 = 15, so 3/4 becomes 15/20
-n2cd = (cd / d2) * n2 # (20 / 5) * 4 = 16, so 4/5 becomes 16/20
+n1cd = n1 * d2 # 3 * 5, so 3/4 becomes 15/20
+n2cd = n2 * d1 # 4 * 4, so 4/5 becomes 16/20
 
 # rn and rd are the result numerator and result denominator
 rn = n1cd + n2cd # add the adjusted numerators

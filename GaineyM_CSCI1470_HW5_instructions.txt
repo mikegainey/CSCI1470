@@ -1,0 +1,35 @@
+Homework #05
+
+Due: Thursday, October 5th at 11:59 pm
+
+Design and write a Python program that gives and grades a math quiz.
+The quiz will give 2 problems for each of the arithmetic operations: +, -, *, /, and %.
+- First, two addition problems will be presented (one at a time) with random numbers between 1 and 20.
+- Then two subtraction problems,
+- multiplication,
+- division (use // and do floor division; for example: for 10//3, the answer should be 3)
+- modulus.
+
+For an example of the first problem:
+- the program generates two random numbers (let's say num1 is 17 and num2 is 5),
+- and prints out a statement of the problem as 17 + 5 =.
+- The user will enter a correct answer or a wrong answer.
+- If the answer is correct, a message will be printed and one will be added to the number of correct answers.
+- Then the second addition problem is given and checked.
+- Next, two subtraction problems will be given and checked, and so on.
+- At the end of 10 problems, a final score is printed out.
+- The user is asked if they want to take another quiz.
+
+
+Grading Rubric for Homework #5 – Math Quiz
+
+2 points: pseudocode is beautiful and is descriptive of code
+1 point: problem is printed
+2 point: all five operators are used
+2 point: operands are random
+1 points: answer is checked and correct or incorrect is reported
+1 points: correct score is reported at the end
+1 point: program loops until user wants to stop
+_____
+
+10 points total

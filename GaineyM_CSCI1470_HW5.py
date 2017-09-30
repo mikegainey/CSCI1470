@@ -157,7 +157,7 @@ while again == 'y': # at the end, the user will be asked to try again
         print()
 
 
-    print("===== Modulus  ===== (the remainder after division)\n")
+    print("===== Modulus  =====\n")
 
     for rep in range(2):
 

@@ -1,4 +1,4 @@
-############################################################
+#################################################################################
 #
 # Name: Michael Gainey
 #
@@ -10,15 +10,15 @@
 #
 #   Import the random module in order to generate random numbers later.
 #   Seed the random number generator.
-#   Set LOWERBOUND to 1 and UPPERBOUND to 20, the bounds of the numbers used in the quesions.
+#   Set LOWERBOUND to 1 and UPPERBOUND to 20, the bounds of the numbers used in the questions.
 #   Begin the outer loop (covering the whole quiz).
 #       Initialize (to zero) variables to track the number of questions asked & number of correct responses.
-#       Display the main welcome mesage.
+#       Display the main welcome massage.
 #
 #       Display an "Addition" heading.
 #       Begin a loop to cover the 2 addition questions.
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display an addition question and get a response.
+#           Display an addition question, (num1 + num2), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 + num2).
 #           If the response is correct, tell the student and increment the correct response counter.
@@ -26,15 +26,15 @@
 #       Display a "Subtraction" heading.
 #       Begin a loop to cover the 2 subtraction questions.
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display a subtraction question and get a response.
+#           Display a subtraction question, (num1 - num2), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 - num2).
 #           If the response is correct, tell the student and increment the correct response counter.
 #
-#       Display a "Multipliction" heading.
+#       Display a "Multiplication" heading.
 #       Begin a loop to cover the 2 multiplication questions.
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display a multiplication question and get a response.
+#           Display a multiplication question, (num1 * num2), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 * num2).
 #           If the response is correct, tell the student and increment the correct response counter.
@@ -42,7 +42,7 @@
 #       Display a "Division" heading (with a note to only give the whole number answer).
 #       Begin a loop to cover the 2 division questions.
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display a division question and get a response.
+#           Display a division question, (num1 ÷ num2), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 // num2).
 #           If the response is correct, tell the student and increment the correct response counter.
@@ -50,7 +50,7 @@
 #       Display a "Modulus" heading.
 #       Begin a loop to cover the 2 modulus questions.
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display a modulus question and get a response.
+#           Display a modulus question, (num1 % num2), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 % num2).
 #           If the response is correct, tell the student and increment the correct response counter.
@@ -61,27 +61,28 @@
 #   If the response is 'y' continue the while-loop.
 #   Otherwise, break out of the loop and end the program.
 #
-############################################################
+#################################################################################
 
 import random
 random.seed()
 
-LOWERBOUND = 1   # lower bound of the numbers in the questions
-UPPERBOUND = 20  # upper bound of the numbers in the questions
+LOWERBOUND = 1     # lower bound of the numbers in the questions
+UPPERBOUND = 20    # upper bound of the numbers in the questions
+NUMBER_OF_EACH = 3 # number of each question type to give
 
-again = 'y' # set the loop to run the first time
+again = 'y'         # set the loop to run the first time
 while again == 'y': # at the end, the user will be asked to try again
 
-    # used to keep track of the number of questions given and number answered correctly
+    # to keep track of the number of questions given and number answered correctly
     questions, correct = 0, 0
 
     print()
-    print("Test your math skills!  Answer these 10 questions.  Good luck!")
+    print("Test your math skills!  Answer these {} questions.  Good luck!".format(NUMBER_OF_EACH * 5))
     print()
 
     print("===== Addition =====\n")
 
-    for rep in range(2):
+    for rep in range(NUMBER_OF_EACH):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
@@ -99,7 +100,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
     print("===== Subtraction =====\n")
 
-    for rep in range(2):
+    for rep in range(NUMBER_OF_EACH):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
@@ -120,7 +121,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
     print("===== Multiplication =====\n")
 
-    for rep in range(2):
+    for rep in range(NUMBER_OF_EACH):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
@@ -138,7 +139,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
     print("===== Division  ===== (just the whole number answer)\n")
 
-    for rep in range(2):
+    for rep in range(NUMBER_OF_EACH):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
@@ -159,7 +160,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
     print("===== Modulus  ===== (the remainder after division)\n")
 
-    for rep in range(2):
+    for rep in range(NUMBER_OF_EACH):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)

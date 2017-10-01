@@ -11,55 +11,59 @@
 #   Import the random module in order to generate random numbers later.
 #   Seed the random number generator.
 #   Set LOWERBOUND to 1 and UPPERBOUND to 20, the bounds of the numbers used in the questions.
-#   Begin the outer loop (covering the whole quiz).
+#   Set again to 'y' so the loop will run the first time
+#   Loop while again is 'y':
 #       Initialize (to zero) variables to track the number of questions asked & number of correct responses.
-#       Display the main welcome massage.
+#       Display the main welcome message.
 #
 #       Display an "Addition" heading.
-#       Begin a loop to cover the 2 addition questions.
+#       Begin a loop to cover the 2 addition questions:
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display an addition question, (num1 + num2), and get a response.
+#           Display an addition question, (num1 + num2 = ), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 + num2).
 #           If the response is correct, tell the student and increment the correct response counter.
 #
 #       Display a "Subtraction" heading.
-#       Begin a loop to cover the 2 subtraction questions.
+#       Begin a loop to cover the 2 subtraction questions:
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display a subtraction question, (num1 - num2), and get a response.
+#           Display a subtraction question, (num1 - num2 = ), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 - num2).
 #           If the response is correct, tell the student and increment the correct response counter.
 #
 #       Display a "Multiplication" heading.
-#       Begin a loop to cover the 2 multiplication questions.
+#       Begin a loop to cover the 2 multiplication questions:
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display a multiplication question, (num1 * num2), and get a response.
+#           Display a multiplication question, (num1 * num2 = ), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 * num2).
 #           If the response is correct, tell the student and increment the correct response counter.
 #
 #       Display a "Division" heading (with a note to only give the whole number answer).
-#       Begin a loop to cover the 2 division questions.
+#       Begin a loop to cover the 2 division questions:
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display a division question, (num1 ÷ num2), and get a response.
+#           Display a division question, (num1 ÷ num2 = ), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 // num2).
 #           If the response is correct, tell the student and increment the correct response counter.
 #
 #       Display a "Modulus" heading.
-#       Begin a loop to cover the 2 modulus questions.
+#       Begin a loop to cover the 2 modulus questions:
 #           Generate 2 random numbers (LOWERBOUND to UPPERBOUND), num1 & num2.
-#           Display a modulus question, (num1 % num2), and get a response.
+#           Display a modulus question, (num1 % num2 = ), and get a response.
 #           Increment the question counter.
 #           Set answer to the correct answer (num1 % num2).
 #           If the response is correct, tell the student and increment the correct response counter.
 #
-#   Display the number of questions answered correctly and the total number of questions.
+#   Set score to the percentage of questions answered correctly
+#
+#   Display the score
 #
 #   Prompt the user to take the quiz again.
-#   If the response is 'y' continue the while-loop.
-#   Otherwise, break out of the loop and end the program.
+#   Set again to 'no' if the user just presses <Enter>.
+#   Set again to just the first character of the response and convert to lowercase.
+#   (If again is 'y' the loop will run again, otherwise the program will end.)
 #
 #################################################################################
 
@@ -68,7 +72,6 @@ random.seed()
 
 LOWERBOUND = 1     # lower bound of the numbers in the questions
 UPPERBOUND = 20    # upper bound of the numbers in the questions
-NUMBER_OF_EACH = 3 # number of each question type to give
 
 again = 'y'         # set the loop to run the first time
 while again == 'y': # at the end, the user will be asked to try again
@@ -77,12 +80,12 @@ while again == 'y': # at the end, the user will be asked to try again
     questions, correct = 0, 0
 
     print()
-    print("Test your math skills!  Answer these {} questions.  Good luck!".format(NUMBER_OF_EACH * 5))
+    print("Time for a math quiz!  Answer these 10 questions.  Good luck!")
     print()
 
     print("===== Addition =====\n")
 
-    for rep in range(NUMBER_OF_EACH):
+    for rep in range(2):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
@@ -100,7 +103,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
     print("===== Subtraction =====\n")
 
-    for rep in range(NUMBER_OF_EACH):
+    for rep in range(2):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
@@ -121,7 +124,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
     print("===== Multiplication =====\n")
 
-    for rep in range(NUMBER_OF_EACH):
+    for rep in range(2):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
@@ -139,7 +142,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
     print("===== Division  ===== (just the whole number answer)\n")
 
-    for rep in range(NUMBER_OF_EACH):
+    for rep in range(2):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
@@ -160,7 +163,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
     print("===== Modulus  =====\n")
 
-    for rep in range(NUMBER_OF_EACH):
+    for rep in range(2):
 
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
@@ -178,14 +181,17 @@ while again == 'y': # at the end, the user will be asked to try again
 
         print()
 
-    endingpunctuation = '!' if correct / questions >= 0.8 else '.'
-    print("You answered {} out of {} questions correctly{}\n"
-          .format(correct, questions, endingpunctuation))
+    score = (correct / questions) * 100
+    score = round(score)
+    
+    endingpunctuation = '!' if score >= 80 else '.'
+    print("You answered {}% of the questions correctly{}\n"
+          .format(score, endingpunctuation))
 
     again = input("Do you want to try again? (y/n) ")
     if again == '': # just pressing <Enter> means no
         again = 'n'
     again = again[0].lower() # look at just the first character of the response (forced lowercase)
-    # if again == 'y' the outer loop will continue again, otherwise the program ends
+    # if again == 'y' the outer loop will continue again, otherwise the program will end
 
 print() # print a blank line before the next shell prompt

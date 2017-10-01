@@ -56,9 +56,10 @@
 #           Set answer to the correct answer (num1 % num2).
 #           If the response is correct, tell the student and increment the correct response counter.
 #
-#   Set score to the percentage of questions answered correctly
+#   Set score to the percentage of questions answered correctly.
+#   Round score to a whole number to make the output look lice.
 #
-#   Display the score
+#   Display the score.
 #
 #   Prompt the user to take the quiz again.
 #   Set again to 'no' if the user just presses <Enter>.
@@ -80,7 +81,7 @@ while again == 'y': # at the end, the user will be asked to try again
     questions, correct = 0, 0
 
     print()
-    print("Time for a math quiz!  Answer these 10 questions.  Good luck!")
+    print("It's time for a math quiz!  Answer these 10 questions.  Good luck!")
     print()
 
     print("===== Addition =====\n")

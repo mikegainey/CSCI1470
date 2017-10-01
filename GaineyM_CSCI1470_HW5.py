@@ -57,7 +57,7 @@
 #           If the response is correct, tell the student and increment the correct response counter.
 #
 #   Set score to the percentage of questions answered correctly.
-#   Round score to a whole number to make the output look lice.
+#   Round score to a whole number to make the output look nice.
 #
 #   Display the score.
 #

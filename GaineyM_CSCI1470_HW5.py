@@ -185,13 +185,12 @@ while again == 'y': # at the end, the user will be asked to try again
     score = (correct / questions) * 100
     score = round(score)
     
-    endingpunctuation = '!' if score >= 80 else '.'
-    print("You answered {}% of the questions correctly{}\n"
-          .format(score, endingpunctuation))
-
+    print("You answered {}% of the questions correctly".format(score), end = "")
+    print("!") if score >= 80 else print(".") # A score of 80% or better earns a "!"
+    
+    print()
     again = input("Do you want to try again? (y/n) ")
-    if again == '': # just pressing <Enter> means no
-        again = 'n'
+    again = again or 'n'     # if again = '' then again = 'n'
     again = again[0].lower() # look at just the first character of the response (forced lowercase)
     # if again == 'y' the outer loop will continue again, otherwise the program will end
 

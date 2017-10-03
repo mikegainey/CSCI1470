@@ -59,10 +59,10 @@
 #   Set score to the percentage of questions answered correctly.
 #   Round score to a whole number to make the output look nice.
 #
-#   Display the score.
+#   Display the score.  Add a "!" if the score is 80% or better.
 #
 #   Prompt the user to take the quiz again.
-#   Set again to 'no' if the user just presses <Enter>.
+#   Set again to 'n' if the user just presses <Enter>.
 #   Set again to just the first character of the response and convert to lowercase.
 #   (If again is 'y' the loop will run again, otherwise the program will end.)
 #
@@ -103,7 +103,6 @@ while again == 'y': # at the end, the user will be asked to try again
 
         print()
 
-
     print("===== Subtraction =====\n")
 
     for rep in range(2):
@@ -123,9 +122,8 @@ while again == 'y': # at the end, the user will be asked to try again
             correct += 1
         else:
             print("No.")
-            
-        print()
 
+        print()
 
     print("===== Multiplication =====\n")
 
@@ -143,9 +141,8 @@ while again == 'y': # at the end, the user will be asked to try again
             correct += 1
         else:
             print("No.")
-            
-        print()
 
+        print()
 
     print("===== Division  ===== (just the whole number answer)\n")
 
@@ -166,9 +163,8 @@ while again == 'y': # at the end, the user will be asked to try again
             correct += 1
         else:
             print("No.")
-            
-        print()
 
+        print()
 
     print("===== Modulus  =====\n")
 
@@ -199,8 +195,8 @@ while again == 'y': # at the end, the user will be asked to try again
     print("!") if score >= 80 else print(".") # A score of 80% or better earns a "!"
     
     print()
-    again = input("Do you want to try again? (y/n) ")
-    again = again or 'n'     # if again = '' then again = 'n'
+    again = input("Do you want to try again? (y/N) ")
+    again = again or 'n'     # just pressing <Enter> means no
     again = again[0].lower() # look at just the first character of the response (forced lowercase)
     # if again == 'y' the outer loop will continue again, otherwise the program will end
 

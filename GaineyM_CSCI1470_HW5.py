@@ -98,6 +98,8 @@ while again == 'y': # at the end, the user will be asked to try again
         if response == answer:
             print("Correct!")
             correct += 1
+        else:
+            print("No.")
 
         print()
 
@@ -109,8 +111,8 @@ while again == 'y': # at the end, the user will be asked to try again
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
 
-        if num2 > num1:
-            num1, num2 = num2, num1
+        # if num2 > num1:
+        #     num1, num2 = num2, num1
 
         response = int(input("{} - {} = ".format(num1, num2)))
         questions += 1
@@ -119,7 +121,9 @@ while again == 'y': # at the end, the user will be asked to try again
         if response == answer:
             print("Correct!")
             correct += 1
-
+        else:
+            print("No.")
+            
         print()
 
 
@@ -137,7 +141,9 @@ while again == 'y': # at the end, the user will be asked to try again
         if response == answer:
             print("Correct!")
             correct += 1
-
+        else:
+            print("No.")
+            
         print()
 
 
@@ -148,8 +154,8 @@ while again == 'y': # at the end, the user will be asked to try again
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
 
-        if num2 > num1:
-            num1, num2 = num2, num1
+        # if num2 > num1:
+        #     num1, num2 = num2, num1
 
         response = int(input("{} \N{DIVISION SIGN} {} = ".format(num1, num2)))
         questions += 1
@@ -158,7 +164,9 @@ while again == 'y': # at the end, the user will be asked to try again
         if response == answer:
             print("Correct!")
             correct += 1
-
+        else:
+            print("No.")
+            
         print()
 
 
@@ -169,8 +177,8 @@ while again == 'y': # at the end, the user will be asked to try again
         num1 = random.randint(LOWERBOUND, UPPERBOUND)
         num2 = random.randint(LOWERBOUND, UPPERBOUND)
 
-        if num2 > num1:
-            num1, num2 = num2, num1
+        # if num2 > num1:
+        #     num1, num2 = num2, num1
 
         response = int(input("{} % {} = ".format(num1, num2)))
         questions += 1
@@ -179,7 +187,9 @@ while again == 'y': # at the end, the user will be asked to try again
         if response == answer:
             print("Correct!")
             correct += 1
-
+        else:
+            print("No.")
+            
         print()
 
     score = (correct / questions) * 100

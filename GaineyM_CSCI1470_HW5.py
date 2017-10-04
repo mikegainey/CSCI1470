@@ -84,7 +84,7 @@ while again == 'y': # at the end, the user will be asked to try again
     print("It's time for a math quiz!  Answer these 10 questions.  Good luck!")
     print()
 
-    # print("===== Addition =====\n")
+    print("===== Addition =====\n")
 
     for rep in range(2):
 
@@ -103,7 +103,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
         print()
 
-    # print("===== Subtraction =====\n")
+    print("===== Subtraction =====\n")
 
     for rep in range(2):
 
@@ -122,7 +122,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
         print()
 
-    # print("===== Multiplication =====\n")
+    print("===== Multiplication =====\n")
 
     for rep in range(2):
 
@@ -141,7 +141,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
         print()
 
-    # print("===== Division  ===== (just the whole number answer)\n")
+    print("===== Division  ===== (just the whole number answer)\n")
 
     for rep in range(2):
 
@@ -160,7 +160,7 @@ while again == 'y': # at the end, the user will be asked to try again
 
         print()
 
-    # print("===== Modulus  =====\n")
+    print("===== Modulus  =====\n")
 
     for rep in range(2):
 

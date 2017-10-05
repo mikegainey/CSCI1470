@@ -10,11 +10,11 @@ UPPERBOUND = 20    # upper bound of the numbers in the questions
 # The value is a tuple with 3 elements:
 #     the operation title ('Addition')
 #     the operation symbol ('+')
-#     and the function itself
-# Python will allow functions to be elements of lists, tuples, etc. For example:
+#     and the function itself (Python will allow functions to be elements of lists, tuples, etc.)
+# For example:
 #     ops['add'][0] = 'Addition'
 #     ops['add'][1] = '+'
-#     ops['add'](5, 7) = 13
+#     ops['add'][2](5, 7) = 13
 
 ops = { 'add' : ('Addition', '+', lambda x, y: x + y),
         'sub' : ('Subtraction', '-', lambda x, y: x - y),

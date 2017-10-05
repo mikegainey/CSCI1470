@@ -1,0 +1,24 @@
+
+Homework #6 Turtles and Functions
+
+Due: Thursday, October 12th, 11:59pm
+
+Write Python programs to solve Exercises 1 and 2 at the end of Chapter 4 of your textbook.
+Use three functions:
+- set up the drawing window,
+- set up the turtle, and
+- draw a square.
+
+
+Grading Rubric for Homework #6 – Drawing squares with functions
+
+2 points: pseudocode is beautiful and is descriptive of code
+1 points: window function called and defined properly
+1 points: turtle function called and defined properly 
+2 points: square function called and defined properly
+2 points: Exercise 1 squares
+2 points: Exercise 2 nested squares
+_____
+
+10 points total
+

@@ -13,26 +13,26 @@
 
 import turtle
 
-def make_window(backgroundColor, windowTitle):
+def make_window(color, title):
     """
       Set up the window with the given background color and title.
       Returns the new window.
     """
-    window = turtle.Screen()        # make a new window
-    window.bgcolor(backgroundColor) # set the background color
-    window.title(windowTitle)       # set the title
-    return window                   # give it back to the calling program
+    newWindow = turtle.Screen() # make a new window
+    newWindow.bgcolor(color)    # set the background color
+    newWindow.title(title)      # set the title
+    return newWindow            # give it back to the calling program
 
 
-def make_turtle(turtleColor, penWidth):
+def make_turtle(color, size):
     """
       Set up a turtle with the given color and pensize.
       Returns the new turtle.
     """
-    newTurtle = turtle.Turtle()  # make a new turtle
-    newTurtle.color(turtleColor) # set the color
-    newTurtle.pensize(penWidth)  # set the pen size
-    return newTurtle             # give it back to the calling program
+    newTurtle = turtle.Turtle() # make a new turtle
+    newTurtle.color(color)      # set the color
+    newTurtle.pensize(size)     # set the pen size
+    return newTurtle            # give it back to the calling program
 
 
 def draw_square(theTurtle, sideLength):
@@ -43,10 +43,11 @@ def draw_square(theTurtle, sideLength):
          theTurtle.left(90)            # turn left
          
 
-window = make_window("lightgreen", "GaineyM_CSCI1470_HW6")
+# keyword arguments are clearer than positional arguments
+window = make_window(color = "lightgreen", title = "GaineyM_CSCI1470_HW6")
 
 # Introducing Mirtle, the turtle!
-mirtle = make_turtle("hotpink", 5)
+mirtle = make_turtle(color = "hotpink", size = 5)
 mirtle.speed(0)
 
 # pre-position the turtle so the output will be centered on the screen
@@ -54,10 +55,16 @@ mirtle.penup()
 mirtle.backward(160)
 mirtle.pendown()
 
+
+######################################
 # Part 1: Five little squares in a row
+######################################
+
+sideLength = 20
+
 for square in range(5):
 
-    draw_square(mirtle, 20)
+    draw_square(mirtle, sideLength)
 
     # move to the next square
     mirtle.penup()
@@ -71,8 +78,10 @@ mirtle.forward(60)
 mirtle.pendown()
 
 
+############################
 # Part 2: Concentric squares
-    
+############################
+
 sideLength = 20
 
 for square in range(5):

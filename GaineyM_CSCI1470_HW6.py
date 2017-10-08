@@ -35,22 +35,22 @@ def make_turtle(color, size):
     return newTurtle            # give it back to the calling program
 
 
-def draw_square(theTurtle, sideLength):
-     """Make turtle theTurtle draw a square of sideLength."""
+def draw_square(turtle, sideLength):
+     """Make turtle turtle draw a square of sideLength."""
 
      for side in range(4):
-         theTurtle.forward(sideLength) # draw a side
-         theTurtle.left(90)            # turn left
+         turtle.forward(sideLength) # draw a side
+         turtle.left(90)            # turn left
          
 
 # keyword arguments are clearer than positional arguments
-window = make_window(color = "lightgreen", title = "GaineyM_CSCI1470_HW6")
+window = make_window(color="lightgreen", title="GaineyM_CSCI1470_HW6")
 
 # Introducing Mirtle, the turtle!
-mirtle = make_turtle(color = "hotpink", size = 5)
+mirtle = make_turtle(color="hotpink", size=5)
 mirtle.speed(0)
 
-# pre-position the turtle so the output will be centered on the screen
+# pre-position mirtle so the output will be centered on the screen
 mirtle.penup()
 mirtle.backward(160)
 mirtle.pendown()
@@ -60,11 +60,11 @@ mirtle.pendown()
 # Part 1: Five little squares in a row
 ######################################
 
-sideLength = 20
+length = 20
 
 for square in range(5):
 
-    draw_square(mirtle, sideLength)
+    draw_square(turtle=mirtle, sideLength=length)
 
     # move to the next square
     mirtle.penup()
@@ -82,11 +82,11 @@ mirtle.pendown()
 # Part 2: Concentric squares
 ############################
 
-sideLength = 20
+length = 20
 
 for square in range(5):
 
-    draw_square(mirtle, sideLength)
+    draw_square(turtle=mirtle, sideLength=length)
 
     # move (back and down) to the next (larger) square
     mirtle.penup()
@@ -96,7 +96,7 @@ for square in range(5):
     mirtle.left(90)
     mirtle.pendown()
 
-    sideLength += 20 # the next square will be larger
+    length += 20 # the next square will be larger
 
 
 window.mainloop() # so the window doesn't disappear

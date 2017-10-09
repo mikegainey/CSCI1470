@@ -17,7 +17,7 @@
 #
 #
 #     Define function make_turtle to make a turtle of given color and pen size.
-#         Instantiate a turtle object called newTurtle.
+#         Instantiate a Turtle object called newTurtle.
 #         Set newTurtle's color.
 #         Set newTurtle's pensize.
 #         Return newTurtle to the calling function/program.
@@ -25,11 +25,11 @@
 #
 #     Define function draw_square to draw a square given a turtle and side length.
 #         Begin a loop that repeats 4 times:
-#             Have the turtle draw a line of length length.
+#             Have the turtle draw a line of length sideLength.
 #             Have the turtle turn 90 degrees to the left.
 #
 #
-#     Instantiate a window called window with the make_window function.
+#     Instantiate a Screen object called window with the make_window function.
 #
 #     Instantiate mirtle the turtle with the make_turtle function.
 #     Set mirtle's speed to 0, the fastest speed.
@@ -38,23 +38,23 @@
 #     Have mirtle back up 160 pixels.
 #     Have mirtle lower her pen so she can draw.
 #
-#     Set the variable length to 20, the side length of subsequent squares.
-#         Begin a loop that repeats 5 times (for 5 squares).
-#
-#             Call the draw_square function so mirtle will draw a square.
-#
-#             Have mirtle lift her pen to prepare to move.
-#             Have mirtle move forward 40 pixels.
-#             Have mirtle lower her pen to draw the next square.
-#
-#     Have mirtle lift her pen to prepare to move.
-#     Have mirtle move forward 60 pixels to her next creation.
-#     Have mirtle lower her pen to draw the next square.
-#
-#     Set the variable length to 20, the side length of her next square.
+#     Set length to 20, the side length of subsequent squares.
 #     Begin a loop that repeats 5 times (for 5 squares).
 #
-#         Call the draw_square function so mirtle will draw a square of side-length length.
+#         Call the draw_square function with arguments mirtle and length.
+#
+#         Have mirtle lift her pen to prepare to move.
+#         Have mirtle move forward 40 pixels.
+#         Have mirtle lower her pen to draw the next square.
+#
+#     Have mirtle lift her pen to prepare to move.
+#     Have mirtle move forward 60 pixels for her next creation.
+#     Have mirtle lower her pen so she can draw.
+#
+#     Set length to 20, the side length of her next square.
+#     Begin a loop that repeats 5 times (for 5 squares).
+#
+#         Call the draw_square function with arguments mirtle and length.
 #
 #         Have mirtle lift her pen to prepare to move.
 #         Have mirtle move back 10 pixels.
@@ -146,7 +146,7 @@ for square in range(5):
 
     draw_square(turtleObject=mirtle, sideLength=length)
 
-    # move (back and down) to the next (larger) square
+    # move (back 10 and down 10) to the next (larger) square
     mirtle.penup()
     mirtle.back(10)
     mirtle.right(90)

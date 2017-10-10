@@ -9,34 +9,39 @@
 # Algorithm:
 #     Import the turtle module to enable turtle graphics.
 #
-#     Define function make_window to make a turtle window of given color and title.
+#     Define function make_window with parameters color and title.
 #         Instantiate a Screen object called newWindow.
-#         Set newWindow's background color.
-#         Set newWindow's title.
+#         Set newWindow's background color to color.
+#         Set newWindow's title to title.
 #         Return newWindow to the calling function/program.
 #
 #
-#     Define function make_turtle to make a turtle of given color and pen size.
+#     Define function make_turtle with parameters color and size.
 #         Instantiate a Turtle object called newTurtle.
-#         Set newTurtle's color.
-#         Set newTurtle's pensize.
+#         Set newTurtle's color to color.
+#         Set newTurtle's pensize to size.
 #         Return newTurtle to the calling function/program.
 #
 #
-#     Define function draw_square to draw a square given a turtle and side length.
+#     Define function draw_square with parameters turtleObject and sideLength.
 #         Begin a loop that repeats 4 times:
-#             Have the turtle draw a line of length sideLength.
-#             Have the turtle turn 90 degrees to the left.
+#             Have the turtleObject move forward sideLength pixels.
+#             Have the turtleObject turn 90 degrees to the left.
 #
 #
-#     Instantiate a Screen object called window with the make_window function.
+#     Set window to the make_window function with arguments 'lightgreen' and 'GaineyM_CSCI1470_HW6'
 #
-#     Instantiate mirtle the turtle with the make_turtle function.
+#     Set mirtle to the make_turtle function with arguments 'hotpink' and 5.
 #     Set mirtle's speed to 0, the fastest speed.
 #
 #     Have mirtle lift her pen to preposition her for centered output.
 #     Have mirtle back up 160 pixels.
 #     Have mirtle lower her pen so she can draw.
+#
+#
+#     ####################################
+#     Part 1: Five little squares in a row
+#     ####################################
 #
 #     Set length to 20, the side length of subsequent squares.
 #     Begin a loop that repeats 5 times (for 5 squares).
@@ -47,9 +52,16 @@
 #         Have mirtle move forward 40 pixels.
 #         Have mirtle lower her pen to draw the next square.
 #
+#
+#     # Separate output from Part 1 and Part 2
 #     Have mirtle lift her pen to prepare to move.
 #     Have mirtle move forward 60 pixels for her next creation.
 #     Have mirtle lower her pen so she can draw.
+#
+#
+#     ##########################
+#     Part 2: Concentric squares
+#     ##########################
 #
 #     Set length to 20, the side length of her next square.
 #     Begin a loop that repeats 5 times (for 5 squares).
@@ -119,12 +131,11 @@ mirtle.pendown()
 ######################################
 
 length = 20
-
 for square in range(5):
 
     draw_square(turtleObject=mirtle, sideLength=length)
 
-    # move to the next square
+    # move right to the next square
     mirtle.penup()
     mirtle.forward(40)
     mirtle.pendown()
@@ -141,12 +152,11 @@ mirtle.pendown()
 ############################
 
 length = 20
-
 for square in range(5):
 
     draw_square(turtleObject=mirtle, sideLength=length)
 
-    # move (back 10 and down 10) to the next (larger) square
+    # move (left 10 and down 10) to the next (larger) square
     mirtle.penup()
     mirtle.back(10)
     mirtle.right(90)

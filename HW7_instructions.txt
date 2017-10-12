@@ -1,0 +1,45 @@
+Homework #7 Alphabetic Telephone Number Translator
+
+Due: Thursday October 19, 2017. 11:59PM
+
+On a standard telephone, alphabetic letters are mapped to numbers in the following fashion:
+
+A, B, and C = 2
+D, E, and F = 3
+G, H, and I = 4
+J, K, and L = 5
+M, N, and O = 6
+P, Q, and R = 7  *** this should include the letter 's' ***
+T, U, and V = 8
+W, X, Y, and Z = 9
+
+Write a fruitful function that takes any string of alphanumeric characters and returns a string with all alphabetic
+characters in the argument translated into their numeric equivalent, using the above mapping. (6 points)
+
+Many companies use telephone numbers like 713-GET-FOOD to make it easier for their customers to remember.
+But for customers, it is easier to dial a pure numeric phone number, rather than an alphanumeric number.
+
+Write an application program that asks the user to enter a 10 character alphanumeric telephone number
+  in the form of XXX-XXX-XXXX.
+
+The application should then call your function to translate the alphanumeric phone number into its equivalent
+numeric phone number and display the result.
+
+For example if the user enters 713-GET-FOOD the application should display 713-438-3663.
+
+The application should allow the user to continue translating phone numbers until she/he decides to stop.
+
+Use meaningful variable names. (6 points)
+
+
+Grading Rubric for Homework #7 – Alphabetic Telephone Number Translator
+
+2 points: pseudocode is beautiful and is descriptive of code
+1 point: docstring is descriptive of the function
+4 points: function is called and defined properly 
+4 points: program is efficient and works correctly
+1 point: meaningful variable and function names
+_____
+
+12 points total
+

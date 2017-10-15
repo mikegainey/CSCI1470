@@ -7,7 +7,31 @@
 # Assignment: Homework #7
 #
 # Algorithm:
-#   blah, blah, blah, ...
+#   Define a function, translate, that takes a string parameter, alphanumeric:
+#       Set numeric to the empty string. This will be the eventual output.
+#       Begin a loop with character traversing alphanumeric:
+#           If the current character is in "ABCabc" append "2" to numeric,
+#           else, if the current character is in "DEFdef" append "3" to numeric,
+#           else, if the current character is in "GHIghi" append "4" to numeric,
+#           else, if the current character is in "JKLjkl" append "5" to numeric,
+#           else, if the current character is in "MNOmno" append "6" to numeric,
+#           else, if the current character is in "PQRSpqrs" append "7" to numeric,
+#           else, if the current character is in "TUVtuv" append "8" to numeric,
+#           else, if the current character is in "WXYZwxyz" append "9" to numeric.
+#           otherwise, just append the current character to numeric.
+#       Return numeric to the calling function/program.
+#
+#
+#   Set again to 'y' so the loop will run the first time.
+#   Loop while again is 'y':
+#
+#       Set phoneNumber to an alphanumeric phone number the user enters.
+#       Print the corresponding numeric phone number using the translate function.
+#
+#       Prompt the user to translate another phone number.
+#       Set again to 'n' if the user just presses <Enter>.
+#       Set again to just the first character of the response and convert to lowercase.
+#       (If again is 'y' the loop will run again, otherwise the program will end.)
 #
 ###############################################################################
 

@@ -1,25 +1,24 @@
-def trans_char(in_char):
-    '''Translate one character'''
-    
-    letters = 'ABC DEF GHI JKL MNO PQRS TUV WXYZ'
-    numbers = '222 333 444 555 666 7777 888 9999'
-
-    in_char = in_char.upper()
-    if in_char in letters:
-        index = letters.find(in_char)
-        out_char = numbers[index]
-    else:
-        out_char = in_char
-
-    return out_char
-
-
 def translate(alphanumeric):
-    '''translate a string'''
+    '''Given an alphanumeric phone number, return the equivalent all-numeric phone number.
+       translate(alphanumeric: str) -> str
+    '''
+
+    letters = 'ABC DEF GHI JKL MNO PQRS TUV WXYZ' # the map from: letters
+    numbers = '222 333 444 555 666 7777 888 9999' #           to: numbers
     
-    numeric = ''
-    for character in alphanumeric:
-        numeric += trans_char(character)
+    numeric = ''                   # this will be the output string
+    for character in alphanumeric: # traverse the input
+
+        # translate one character
+        in_char = character.upper()
+        if in_char in letters:
+            index = letters.find(in_char)
+            out_char = numbers[index]
+        else:
+            out_char = in_char
+
+        numeric += out_char # build the output string
+
     return numeric
 
 

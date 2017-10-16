@@ -8,21 +8,17 @@
 #
 # Algorithm:
 #   Define a function, translate, that takes a string parameter, alphanumeric:
-#
-#       Set letters equal to 'ABC DEF GHI JKL MNO PQRS TUV WXYZ'
-#       Set numbers equal to '222 333 444 555 666 7777 888 9999'
-#
 #       Set numeric to the empty string. This will be the eventual output.
 #       Begin a loop with character traversing alphanumeric:
-#
-#           Set in_char to character and apply the upper string method.
-#           If in_char is in letters ...
-#               Set index to the index of in_char in letters using the find method.
-#               Set out_char to the character in numbers with the same index.
-#               Otherwise (in_char not in letters), set out_char to in_char.
-#
-#           Append out_char to numeric.
-#
+#           If the current character is in "ABCabc" append "2" to numeric,
+#           else, if the current character is in "DEFdef" append "3" to numeric,
+#           else, if the current character is in "GHIghi" append "4" to numeric,
+#           else, if the current character is in "JKLjkl" append "5" to numeric,
+#           else, if the current character is in "MNOmno" append "6" to numeric,
+#           else, if the current character is in "PQRSpqrs" append "7" to numeric,
+#           else, if the current character is in "TUVtuv" append "8" to numeric,
+#           else, if the current character is in "WXYZwxyz" append "9" to numeric.
+#           otherwise, just append the current character to numeric.
 #       Return numeric to the calling function/program.
 #
 #
@@ -39,27 +35,31 @@
 #
 ###############################################################################
 
-
 def translate(alphanumeric):
     '''Given an alphanumeric phone number, return the equivalent all-numeric phone number.
        translate(alphanumeric: str) -> str
     '''
 
-    letters = 'ABC DEF GHI JKL MNO PQRS TUV WXYZ' # the map from: letters
-    numbers = '222 333 444 555 666 7777 888 9999' #           to: numbers
-    
-    numeric = ''                   # this will be the output string
+    numeric = ''
     for character in alphanumeric: # traverse the input
-
-        # translate one character
-        in_char = character.upper()       # convert to uppercase
-        if in_char in letters:            # if in_char is in letters ...
-            index = letters.find(in_char) # get it's index
-            out_char = numbers[index]     # get the corresponding character in numbers
+        if character in 'ABCabc':  # build the output string
+            numeric += '2'
+        elif character in 'DEFdef':
+            numeric += '3'
+        elif character in 'GHIghi':
+            numeric += '4'
+        elif character in 'JKLjkl':
+            numeric += '5'
+        elif character in 'MNOmno':
+            numeric += '6'
+        elif character in 'PQRSpqrs':
+            numeric += '7'
+        elif character in 'TUVtuv':
+            numeric += '8'
+        elif character in 'WXYZwxyz':
+            numeric += '9'
         else:
-            out_char = in_char            # if in_char is not in letters, just pass it through
-
-        numeric += out_char               # append the translated character to the output string
+            numeric += character # just pass through any other character
 
     return numeric
 

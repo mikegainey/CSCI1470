@@ -9,17 +9,17 @@
 # Algorithm:
 #   Define a function, translate, that takes a string parameter, alphanumeric:
 #
-#       Set letters equal to 'ABC DEF GHI JKL MNO PQRS TUV WXYZ'
-#       Set numbers equal to '222 333 444 555 666 7777 888 9999'
+#       Set LETTERS equal to 'ABC DEF GHI JKL MNO PQRS TUV WXYZ'
+#       Set NUMBERS equal to '222 333 444 555 666 7777 888 9999'
 #
 #       Set numeric to the empty string. This will be the eventual output.
 #       Begin a loop with character traversing alphanumeric:
 #
 #           Set in_char to character and apply the upper string method.
-#           If in_char is in letters ...
-#               Set index to the index of in_char in letters using the find method.
-#               Set out_char to the character in numbers with the same index.
-#               Otherwise (in_char not in letters), set out_char to in_char.
+#           If in_char is in LETTERS ...
+#               Set index to the index of in_char in LETTERS using the find method.
+#               Set out_char to the character in NUMBERS with the same index.
+#               Otherwise (in_char not in LETTERS), set out_char to in_char.
 #
 #           Append out_char to numeric.
 #
@@ -45,19 +45,19 @@ def translate(alphanumeric):
        translate(alphanumeric: str) -> str
     '''
 
-    letters = 'ABC DEF GHI JKL MNO PQRS TUV WXYZ' # the map from: letters
-    numbers = '222 333 444 555 666 7777 888 9999' #           to: numbers
+    LETTERS = 'ABC DEF GHI JKL MNO PQRS TUV WXYZ' # the map from: LETTERS
+    NUMBERS = '222 333 444 555 666 7777 888 9999' #           to: NUMBERS
     
     numeric = ''                   # this will be the output string
     for character in alphanumeric: # traverse the input
 
         # translate one character
         in_char = character.upper()       # convert to uppercase
-        if in_char in letters:            # if in_char is in letters ...
-            index = letters.find(in_char) # get it's index
-            out_char = numbers[index]     # get the corresponding character in numbers
+        if in_char in LETTERS:            # if in_char is in LETTERS ...
+            index = LETTERS.find(in_char) # get it's index
+            out_char = NUMBERS[index]     # get the corresponding character in NUMBERS
         else:
-            out_char = in_char            # if in_char is not in letters, just pass it through
+            out_char = in_char            # if in_char is not in LETTERS, just pass it through
 
         numeric += out_char               # append the translated character to the output string
 

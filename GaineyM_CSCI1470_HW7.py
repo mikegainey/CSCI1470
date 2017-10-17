@@ -12,14 +12,14 @@
 #       Set LETTERS equal to 'ABC DEF GHI JKL MNO PQRS TUV WXYZ'
 #       Set NUMBERS equal to '222 333 444 555 666 7777 888 9999'
 #
-#       Set numeric to the empty string. This will be the eventual output.
+#       Set numeric to an empty string. This will become the eventual output.
 #       Begin a loop with character traversing alphanumeric:
 #
 #           Set in_char to character and apply the upper string method.
 #           If in_char is in LETTERS ...
 #               Set index to the index of in_char in LETTERS using the find method.
 #               Set out_char to the character in NUMBERS with the same index.
-#               Otherwise (in_char not in LETTERS), set out_char to in_char.
+#               Otherwise (if in_char is not in LETTERS), just set out_char to in_char.
 #
 #           Append out_char to numeric.
 #

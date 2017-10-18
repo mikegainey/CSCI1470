@@ -1,12 +1,5 @@
 # input = [1 (2 (5)*3 3)*2 7], output = 1 2 5 5 5 3 2 5 5 5 3 7
 
-# Note: I didn't know the rules of how to form the possible inputs.  So, this function may sometimes fail because
-# my method of finding the matching left parenthesis is very naive.  But it works with the example you gave me in class.
-
-# After finding a parenthasis matching algorithm online, I noticed that my algorithm seems to work in a similiar manner:
-#   Search from the left.  After finding a closing parenthesis, check that the previous parenthesis is an opening parenthesis
-#   of the same type.  My program assumes all parenthesis are the () type and doesn't know about [] or {}.
-
 # Assumptions:
 # - A right paren is immediately to the left of each * operator
 # - A multiplier argument is immediately to the rigth of each * operator.
@@ -39,8 +32,7 @@ def strmult(inpstr):
         lparenx = inpstr.rfind('(', 0, rparenx) # the index of the left paren (might find the wrong one)
 
         insert = inpstr[(lparenx + 1):rparenx]  # the string to be multiplied (within parens but not including them)
-        insert = [insert for a in range(arg)]   # do the multiplication with a list comprehension
-        insert = ' '.join(insert)               # convert to a string with spaces in between
+        insert = ((insert + ' ') * arg).strip() # do the multiplication and strip off the extra space on the end
 
         leftstr = inpstr[:lparenx]              # the left part of the rest of the string
         rightstr = inpstr[(argx + 1):]          # the right part of the rest of the string

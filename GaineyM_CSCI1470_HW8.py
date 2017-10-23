@@ -46,6 +46,9 @@
 ###############################################################################
 
 def decode(public_sentence):
+    '''Given a string of words, return a word made from first letters of each word in the input string.
+       decode(public_sentence : str) -> str
+    '''
 
     words = public_sentence.split()            # split the public_sentence into words
 
@@ -57,15 +60,18 @@ def decode(public_sentence):
 
 
 def dateconv(shortdate):
+    '''Given a date string in mm/dd/yy format, return a date string in Month dd, yyyy format
+       dateconv(shortdate : str) -> str
+    '''
 
-    # month numbers correspond to list indices
+    # month numbers correspond to list indices; note the placeholder at months[0]
     months = ['placeholder', 'January', 'February', 'March', 'April', 'May', 'June',
               'July', 'August', 'September', 'October', 'November', 'December']
 
     inmonth, inday, inyear = shortdate.split('/')
     inmonth = int(inmonth) # runtime error occurs if inmonth isn't two digits!
     
-    outmonth = months[inmonth]
+    outmonth = months[inmonth] # lookup the month string from the months list
     outday = inday
     outyear = '20' + inyear
 

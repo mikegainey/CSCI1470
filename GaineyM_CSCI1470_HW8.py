@@ -4,7 +4,7 @@
 #
 # Course: CSCI 1470
 #
-# Assignment: Homework #
+# Assignment: Homework #8
 #
 # Algorithm:
 #   Define a function decode that takes a string parameter public_sentence.

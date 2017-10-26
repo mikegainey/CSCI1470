@@ -1,0 +1,32 @@
+Homework #8 Decoder and String date converter
+
+Due: Thursday, October 26th 11:59pm
+
+Design and write a Python program that decodes a secret message.  A string contains several words.
+Use the split( ) function to convert the string into a list of words.
+The first letter of each word is written to a new string, spelling out the secret message.
+For example, "governors only ask strangers to run over skunks", would generate the secret message 'goastros'.
+Your program should accept strings from users and generate the secret message. (5 points)
+
+Design and write a Python program that converts a date
+- from the form "month/day/year", such as "10/19/17"
+- to the string "monthName 19, 2017", or "October 19, 2017".
+- Use a list to determine the month names. (5 points)
+
+Grading Rubric for Homework #8 
+
+Decoder
+1 point: pseudocode is beautiful and is descriptive of code
+1 point: uses meaningful variable and function names
+1 point: inputs string from user
+1 point: converts string to list properly 
+1 point: creates and prints correct secret message string 
+
+String Date Converter
+1 point: pseudocode is beautiful and is descriptive of code
+1 point: uses meaningful variable and function names
+1 point: properly accesses list for month names
+2 points: correctly converts date into required format 
+_____
+
+10 points total

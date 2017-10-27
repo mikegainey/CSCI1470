@@ -78,7 +78,7 @@ print()
 
 while True:
 
-    command = input("fd=forward, rt=right, lt=left, plus a distance or angle as appropriate: ")
+    command = input("fd=forward, bk=back, rt=right, lt=left, plus a distance or angle as appropriate: ")
     command = command.split() # command[0] = the command, command[1] = the argument
     
     if len(command) != 2: # command should be a list of length 2
@@ -86,7 +86,7 @@ while True:
         continue          # if not, ask again
 
     cmd = command[0]
-    if cmd not in ['fd', 'rt', 'lt']: # detect an unrecognized command
+    if cmd not in ['fd', 'bk', 'rt', 'lt']: # detect an unrecognized command
         print("--Enter a two-character command and its argument")
         continue                      # ask again
     
@@ -95,6 +95,8 @@ while True:
     # execute the command
     if cmd == 'fd':
         tuttle.fd(arg)
+    elif cmd == 'bk':
+        tuttle.bk(arg)
     elif cmd == 'rt':
         tuttle.rt(arg)
     elif cmd == 'lt':
@@ -127,6 +129,8 @@ tuttle.penup()
 tuttle.color('black')
 tuttle.setpos(tpos)
 tuttle.setheading(theading)
+
+window.bgpic("treasure.png")
 
 # the window persists until the user presses <Enter>
 wait = input("\nPress <Enter> to quit ")

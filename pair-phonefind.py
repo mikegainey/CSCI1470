@@ -1,25 +1,32 @@
-# sentence = "This sentence has a phone number. It is 482-2547.  It is an old number."
-sentence = "55a lalala"
-print(sentence)
-print()
-
-i = 0 # the index of the string
-lasti = len(sentence) - 8 # the last index that could have a 7-digit phone number
-
-while i <= lasti:
-    print("looking at i = {}\n".format(i))
+def isPhoneNumber(maybeNumber):
     
-    if sentence[i].isdigit():
-        maybe = 1 # one digit found
-        print("{} maybe = {}".format(sentence[i], maybe))
-        
-        if sentence[i+1].isdigit():
-            maybe = 2
-            print("{} maybe = {}".format(sentence[i+1], maybe))
-                        
-            if sentence[i+2].isdigit():
-                maybe = 3
-                print("{} maybe = {}".format(sentence[i+2], maybe))
-                
-    i += maybe
-    maybe = 0
+    if len(maybeNumber) != 12:
+        return False
+    
+    first3 = maybeNumber[:3].isdecimal()
+    second3 = maybeNumber[4:7].isdecimal()
+    last4 = maybeNumber[-4:].isdecimal()
+    hyphens = maybeNumber[3] + maybeNumber[7] == '--'
+
+    found = first3 and second3 and last4 and hyphens
+    return found
+
+
+def phoneFind(sentence):
+    
+    if len(sentence) < 12:
+        return [] # too short to have a phone number
+    
+    else:
+        phonelist = []
+        for i in range(len(sentence) - 11):
+            
+            slice2check = sentence[i:(i+12)]
+            
+            if isPhoneNumber(slice2check):
+                phonelist.append(slice2check)
+
+        return phonelist
+
+
+print(phoneFind(sentence1))

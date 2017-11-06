@@ -6,6 +6,8 @@
 #
 # Assignment: Homework #9
 #
+# YouTube video demonstration: https://youtu.be/0-jbnnvd0ZA
+#
 # Algorithm:
 #
 #   Import turtle to access turtle graphics.
@@ -191,7 +193,7 @@ field_max_y = (FIELD_HEIGHT / 2)     # top boundary
 draw_rectangle(field_min_x, field_min_y, FIELD_WIDTH, FIELD_HEIGHT, size=1, color='black')
 
 # set the side length of the treasure square
-TREASURESIZE = 300
+TREASURESIZE = 200
 
 # define the lower-left corner of the treasure square (TREASURESIZE = side length)
 treasure_xpos = random.randint(field_min_x, field_max_x - TREASURESIZE)

@@ -8,7 +8,7 @@
 #
 # YouTube video demonstration: https://youtu.be/0-jbnnvd0ZA
 #
-# Algorithm:
+# Pseudocode:
 #
 #   Import turtle to access turtle graphics.
 #   Import random to access random numbers.
@@ -193,14 +193,14 @@ field_max_y = (FIELD_HEIGHT / 2)     # top boundary
 draw_rectangle(field_min_x, field_min_y, FIELD_WIDTH, FIELD_HEIGHT, size=1, color='black')
 
 # set the side length of the treasure square
-TREASURESIZE = 200
+TREASURESIZE = 100
 
 # define the lower-left corner of the treasure square (TREASURESIZE = side length)
 treasure_xpos = random.randint(field_min_x, field_max_x - TREASURESIZE)
 treasure_ypos = random.randint(field_min_y, field_max_y - TREASURESIZE)
 
 # show the treasure square for testing
-# reveal_treasure_square('blue')
+reveal_treasure_square('blue')
 
 # create the turtle
 mirtle = turtle.Turtle()
@@ -215,6 +215,9 @@ mirtle.setx(random_x)
 mirtle.sety(random_y)
 mirtle.pendown()
 mirtle.right(360 * 10 + random_angle) # spin around 10 times plus a little more
+
+print()
+print("YouTube demonstration video: https://youtu.be/0-jbnnvd0ZA")
 
 print()
 print("Enter commands for the turtle and find the treasure!")
@@ -285,6 +288,6 @@ mirtle.setheading(saved_heading)
 window.bgpic("treasure.png")
 
 # the window persists until the user presses <Enter>
-input("\nPress <Enter> to quit ")
+# input("\nPress <Enter> to quit ")
 
-# window.mainloop() # this doesn't seem to be needed
+window.mainloop() # this doesn't seem to be needed

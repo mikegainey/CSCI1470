@@ -1,6 +1,3 @@
-# Note: I misunderstood the rules of the game.  For this implementation, whoever
-# gets over 21 first wins.
-
 ###############################################################################
 #
 # Name: Michael Gainey
@@ -78,6 +75,7 @@ while True:
     if roll.count(6) == 3:
         score[currentPlayer] += 21
         print("Bunko for {}!!!".format(player[currentPlayer]))
+        break
 
     elif roll.count(6) == 2:
         score[currentPlayer] += 5
@@ -95,15 +93,11 @@ while True:
     print("Score: {} has {} points and {} has {} points\n"
           .format(player[1], score[1], player[2], score[2]))
 
-    # did someone win?
-    higher = max(score) # the higher of the two scores
-    if higher >= 21:    # if >= 21, exit the loop
-        break
 
-# display the winner
-winner = score.index(higher) # winner will be 1 or 2
-print("{} wins!".format(player[winner]))
-        
+print("Score: {} has {} points and {} has {} points\n"
+          .format(player[1], score[1], player[2], score[2]))
+
+print("{} wins!".format(player[currentPlayer]))
 print()
     
         

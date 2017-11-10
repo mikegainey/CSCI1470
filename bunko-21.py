@@ -89,7 +89,7 @@ while True:
 
     else:
         # toggle currentPlayer between 1 and 2
-        currentPlayer = 2 if currentPlayer == 1 else 1
+        currentPlayer = (currentPlayer % 2) + 1 # (1 % 2 + 1 = 2), (2 % 2 + 1 = 1)
         print("next player's turn ...")
 
     print("Score: {} has {} points and {} has {} points\n"

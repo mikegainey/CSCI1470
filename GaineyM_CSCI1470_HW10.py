@@ -25,7 +25,7 @@
 #       Display the currentPlayer's roll
 #
 #       If the roll is 6 6 6 ...
-#           Set currentPlayer's score to 21
+#           Add 21 to currentPlayer's score
 #           Display a message: "Bunko! ..."
 #
 #       else if the roll contains two 6's:

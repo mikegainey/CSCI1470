@@ -71,15 +71,15 @@ while True:
     # roll is a list representing the rolling of three dice
     roll = [random.randint(1,6) for r in range(3)]
     print("{} rolls a {} {} {}".format(player[currentPlayer], roll[0], roll[1], roll[2]), end='    ')
-    
+
+    # score the roll
     if roll.count(6) == 3:
         score[currentPlayer] += 21
         print("Bunko for {}!!!".format(player[currentPlayer]))
-        break
 
     elif roll.count(6) == 2:
         score[currentPlayer] += 5
-        print("+5 points for {}!".format(player[currentPlayer]))
+        print("+5 points for {}!!".format(player[currentPlayer]))
 
     elif roll.count(6) == 1:
         score[currentPlayer] += 1
@@ -87,17 +87,21 @@ while True:
 
     else:
         # toggle currentPlayer between 1 and 2
-        currentPlayer = 2 if currentPlayer == 1 else 1
+        currentPlayer = (currentPlayer % 2) + 1 # (1 % 2 + 1 = 2), (2 % 2 + 1 = 1)
         print("next player's turn ...")
 
+    # display the current score
     print("Score: {} has {} points and {} has {} points\n"
           .format(player[1], score[1], player[2], score[2]))
 
+    # did someone win?
+    higher = max(score) # the higher of the two scores
+    if higher >= 21:    # if >= 21, exit the loop
+        break
 
-print("Score: {} has {} points and {} has {} points\n"
-          .format(player[1], score[1], player[2], score[2]))
-
-print("{} wins!".format(player[currentPlayer]))
+# display the winner
+winner = score.index(higher) # higher is the winning score; winner is the corresponding index (will be 1 or 2)
+print("{} wins!".format(player[winner]))
 print()
     
         

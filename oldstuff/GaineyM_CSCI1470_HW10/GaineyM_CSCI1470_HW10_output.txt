@@ -1,0 +1,177 @@
+Python 3.5.2 (default, Sep 14 2017, 22:51:06) 
+[GCC 5.4.0 20160609] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+===== RESTART: /home/michael/prog/git/CSCI1470/GaineyM_CSCI1470_HW10.py =====
+
+Get ready for some Bunko!!!
+
+Enter player 1's name: Mike
+Enter player 2's name: Krista
+
+Mike will go first.
+
+Mike rolls a 1 2 1    next player's turn ...
+Score: Mike has 0 points and Krista has 0 points
+
+Krista rolls a 4 3 5    next player's turn ...
+Score: Mike has 0 points and Krista has 0 points
+
+Mike rolls a 1 4 6    +1 point for Mike!
+Score: Mike has 1 points and Krista has 0 points
+
+Mike rolls a 2 6 1    +1 point for Mike!
+Score: Mike has 2 points and Krista has 0 points
+
+Mike rolls a 2 4 5    next player's turn ...
+Score: Mike has 2 points and Krista has 0 points
+
+Krista rolls a 4 4 1    next player's turn ...
+Score: Mike has 2 points and Krista has 0 points
+
+Mike rolls a 1 5 2    next player's turn ...
+Score: Mike has 2 points and Krista has 0 points
+
+Krista rolls a 3 4 3    next player's turn ...
+Score: Mike has 2 points and Krista has 0 points
+
+Mike rolls a 5 5 1    next player's turn ...
+Score: Mike has 2 points and Krista has 0 points
+
+Krista rolls a 1 4 2    next player's turn ...
+Score: Mike has 2 points and Krista has 0 points
+
+Mike rolls a 1 2 6    +1 point for Mike!
+Score: Mike has 3 points and Krista has 0 points
+
+Mike rolls a 1 4 6    +1 point for Mike!
+Score: Mike has 4 points and Krista has 0 points
+
+Mike rolls a 4 6 5    +1 point for Mike!
+Score: Mike has 5 points and Krista has 0 points
+
+Mike rolls a 5 5 2    next player's turn ...
+Score: Mike has 5 points and Krista has 0 points
+
+Krista rolls a 5 1 2    next player's turn ...
+Score: Mike has 5 points and Krista has 0 points
+
+Mike rolls a 4 4 5    next player's turn ...
+Score: Mike has 5 points and Krista has 0 points
+
+Krista rolls a 3 3 6    +1 point for Krista!
+Score: Mike has 5 points and Krista has 1 points
+
+Krista rolls a 6 3 4    +1 point for Krista!
+Score: Mike has 5 points and Krista has 2 points
+
+Krista rolls a 6 5 1    +1 point for Krista!
+Score: Mike has 5 points and Krista has 3 points
+
+Krista rolls a 3 1 2    next player's turn ...
+Score: Mike has 5 points and Krista has 3 points
+
+Mike rolls a 1 6 6    +5 points for Mike!!
+Score: Mike has 10 points and Krista has 3 points
+
+Mike rolls a 5 6 3    +1 point for Mike!
+Score: Mike has 11 points and Krista has 3 points
+
+Mike rolls a 6 4 2    +1 point for Mike!
+Score: Mike has 12 points and Krista has 3 points
+
+Mike rolls a 5 3 3    next player's turn ...
+Score: Mike has 12 points and Krista has 3 points
+
+Krista rolls a 2 5 5    next player's turn ...
+Score: Mike has 12 points and Krista has 3 points
+
+Mike rolls a 2 6 3    +1 point for Mike!
+Score: Mike has 13 points and Krista has 3 points
+
+Mike rolls a 1 6 2    +1 point for Mike!
+Score: Mike has 14 points and Krista has 3 points
+
+Mike rolls a 3 2 3    next player's turn ...
+Score: Mike has 14 points and Krista has 3 points
+
+Krista rolls a 3 5 3    next player's turn ...
+Score: Mike has 14 points and Krista has 3 points
+
+Mike rolls a 4 4 3    next player's turn ...
+Score: Mike has 14 points and Krista has 3 points
+
+Krista rolls a 1 2 1    next player's turn ...
+Score: Mike has 14 points and Krista has 3 points
+
+Mike rolls a 5 3 2    next player's turn ...
+Score: Mike has 14 points and Krista has 3 points
+
+Krista rolls a 1 6 2    +1 point for Krista!
+Score: Mike has 14 points and Krista has 4 points
+
+Krista rolls a 4 5 1    next player's turn ...
+Score: Mike has 14 points and Krista has 4 points
+
+Mike rolls a 1 3 1    next player's turn ...
+Score: Mike has 14 points and Krista has 4 points
+
+Krista rolls a 1 3 6    +1 point for Krista!
+Score: Mike has 14 points and Krista has 5 points
+
+Krista rolls a 6 6 3    +5 points for Krista!!
+Score: Mike has 14 points and Krista has 10 points
+
+Krista rolls a 4 4 2    next player's turn ...
+Score: Mike has 14 points and Krista has 10 points
+
+Mike rolls a 4 2 5    next player's turn ...
+Score: Mike has 14 points and Krista has 10 points
+
+Krista rolls a 5 1 4    next player's turn ...
+Score: Mike has 14 points and Krista has 10 points
+
+Mike rolls a 6 3 1    +1 point for Mike!
+Score: Mike has 15 points and Krista has 10 points
+
+Mike rolls a 2 4 1    next player's turn ...
+Score: Mike has 15 points and Krista has 10 points
+
+Krista rolls a 2 6 4    +1 point for Krista!
+Score: Mike has 15 points and Krista has 11 points
+
+Krista rolls a 3 2 6    +1 point for Krista!
+Score: Mike has 15 points and Krista has 12 points
+
+Krista rolls a 5 4 1    next player's turn ...
+Score: Mike has 15 points and Krista has 12 points
+
+Mike rolls a 3 2 5    next player's turn ...
+Score: Mike has 15 points and Krista has 12 points
+
+Krista rolls a 4 2 4    next player's turn ...
+Score: Mike has 15 points and Krista has 12 points
+
+Mike rolls a 4 2 3    next player's turn ...
+Score: Mike has 15 points and Krista has 12 points
+
+Krista rolls a 3 4 6    +1 point for Krista!
+Score: Mike has 15 points and Krista has 13 points
+
+Krista rolls a 1 6 1    +1 point for Krista!
+Score: Mike has 15 points and Krista has 14 points
+
+Krista rolls a 6 5 4    +1 point for Krista!
+Score: Mike has 15 points and Krista has 15 points
+
+Krista rolls a 4 2 6    +1 point for Krista!
+Score: Mike has 15 points and Krista has 16 points
+
+Krista rolls a 6 1 6    +5 points for Krista!!
+Score: Mike has 15 points and Krista has 21 points
+
+Krista wins!
+
+>>> 
+
+

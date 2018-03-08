@@ -117,13 +117,13 @@ while True:
     elif choice == '3':
         break
 
-    
+
 # Homework #11
 
 # Due: Tuesday, November 28th
 
 # Write a program that provides the user with three options:
-#      (1) Copy files 
+#      (1) Copy files
 #      (2) Compare files
 #      (3) Stop
 
